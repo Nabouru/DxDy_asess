@@ -9,10 +9,11 @@ import ViewEmployee from './Components/Admin/viewEmployee'
 
 ReactDOM.render(
   <React.StrictMode>
-  <Login />
+  
    <BrowserRouter>
        <Routes>
-         
+          
+          <Route path='' element={<Login/>} /> 
           <Route path='/admin/addEmployee' element={<AddEmployee/>} /> 
           <Route path='/admin/viewEmployee' element={<ViewEmployee/>}/>
          
