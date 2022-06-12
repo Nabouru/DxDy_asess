@@ -1,6 +1,9 @@
+//importing Router from express to respond to requests that are made
+
 const router = require("express").Router();
 let Employee =require("../models/Employee.js")
 
+//creating an employee
 router.route("/addEmployee").post((req,res)=>{
     const f_name = req.body.f_name;
     const l_name = req.body.l_name;
@@ -20,7 +23,7 @@ router.route("/addEmployee").post((req,res)=>{
         console.log(err);
     })
 })
-
+//get all employee details
 router.route("/getEmployee").get((req,res)=>{
     Employee.find().then((employees)=>{
         res.json(employees)

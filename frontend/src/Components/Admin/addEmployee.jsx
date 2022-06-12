@@ -2,18 +2,21 @@ import React from 'react'
 import Sidebar from './sidebar'
 import Styles from './Employee.module.css'
 import { useState } from 'react'
+
+//importing axios to make http requests to node
 import axios from 'axios'
 import Alert from '@mui/material/Alert';
 
 
 
 function AddEmployee() {
-
+//creating constants to assign value that are entered by user
  const[f_name,setFname] = useState("");
  const[l_name,setLname] = useState("");
  const[description,setDes] = useState("");
  const[errBox , setError] = useState("");
 
+ //function to send http requests through browser to node
  function addEmployee(e){
    e.preventDefault();
    
@@ -41,7 +44,7 @@ function AddEmployee() {
 
   return (
     <div>
-     
+     {/* creating a split screen to have side bar and addEmployee component*/}
      <div className={Styles.split}>
       
         <Sidebar/>
@@ -52,6 +55,7 @@ function AddEmployee() {
       <div className={Styles.centered}>
         
           <br></br>
+          {/* creating a form to get employee details */}
           <form className={Styles.addForm} onSubmit={addEmployee}>
             <div>
               <label htmlFor='fname'>First Name</label>

@@ -8,7 +8,7 @@ import axios from "axios";
 import Alert from '@mui/material/Alert';
 
 
-
+//creation of login function to send http request to node through axios
 function Login() {
   
   const[email,setEmail]=(useState(""));
@@ -75,7 +75,6 @@ function Login() {
           <div style={{ fontSize: "60px", color: "#FFFF" }}>Employee</div>
           <div style={{ fontSize: "55px", color: "#616161" }}>Portal</div>
           <br></br>
-          {/* <h4 className={Styles.msg}>{msg}</h4> */}
           {errbox}
           <br></br>
           <form className={Styles.loginForm} onSubmit={onSubmit}>

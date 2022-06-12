@@ -9,7 +9,7 @@ import ViewEmployee from './Components/Admin/viewEmployee'
 
 ReactDOM.render(
   <React.StrictMode>
-  
+  {/* creating routes so each component can be accessed with different paths */}
    <BrowserRouter>
        <Routes>
           

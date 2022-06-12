@@ -13,6 +13,7 @@ function Sidebar() {
         <br></br>
         <div>
             <ul className={Styles.SidebarList}>
+              {/*iterating through sidebar.js array to map the sidebar values */}
             {SidebarData.map((val,key)=>{
             return(
                 <li
@@ -24,6 +25,7 @@ function Sidebar() {
                 
                 }}> 
                 {""}
+                {/*assigning id if the pathname is equal to the rendered component path*/}
                 <div className={Styles.icon}id={window.location.pathname== val.link ? Styles.active :"" }> {val.icon} </div>
                 <div className={Styles.title}id={window.location.pathname== val.link ? Styles.active :"" } >{val.title} </div>
 

@@ -1,12 +1,16 @@
+//importing Router from express to respond to requests that are made
 const router = require('express').Router();
+//importing admin model
 let Admin = require('../models/Admin.js');
 
+
+//implementation of login
 router.route('/adminLogin').post((req,res)=>{
     const email = req.body.email;
     const password = req.body.password;
     var pw;
    
-
+ //finding the relevant user by its email
     Admin.findOne({email:email}).then((result)=>{
         
        
@@ -34,6 +38,7 @@ router.route('/adminLogin').post((req,res)=>{
 })
 
 
+// creating an admin
 
 router.route("/addAdmin").post((req,res)=>{
     const email = req.body.email;

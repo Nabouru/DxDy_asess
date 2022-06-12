@@ -1,7 +1,8 @@
+//importing mongoose
 const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
-
+// creating schema for employee
 const employeeSchema = new Schema({
     
     f_name : {

@@ -1,11 +1,12 @@
 import React from 'react'
 import Sidebar from './sidebar'
 import Styles from './ViewEmployee.module.css'
+//importing Table materials from material ui
 import {TableContainer,Table,TableHead,TableBody,TableRow,TableCell} from '@mui/material'
 import {useState, useEffect } from 'react'
 import axios from 'axios'
 
-
+// creating function to send http request to node to retrieve employees 
 function ViewEmployee() {
 
   const[employees, setEmployees] = useState([""])
