@@ -1,0 +1,102 @@
+.split {
+    height: 100%;
+    width:29.9%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+  
+   
+  }
+  
+  /* Control the left side */
+  .left {
+    height: 100vh;
+    left: 0;
+    background-image:  linear-gradient(to right, #050505 , #0A0A0A)
+  }
+  
+  /* Control the right side */
+  .right {
+    height: 100vh;
+    width: 70.1%;
+    float: right; 
+    background-image:  linear-gradient(to right, #0A0A0A , #1A1A1A)
+  }
+  
+  
+  .centered {
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    
+  }
+
+  .img{
+          height: 100vh;
+  }
+  .img2{
+      float: right;
+      margin-right: 5%;
+      margin-top: 3%;
+  }
+
+  .loginForm input{
+       
+        background: none;
+        outline: none;
+        border-width: 0 0 2px ;
+        border-color: #707070;
+        width: 90%;
+        justify-content: space-between;        
+        
+  }
+  input::placeholder{
+      color:#FFFF;
+      font-size: 14px;
+      text-align: left;
+  }     
+
+  .loginForm label{
+     color: #636363;
+  }
+
+  input, select, textarea{
+    color: #FFFF;
+}
+
+textarea:focus, input:focus {
+    color: #FFFF;
+}
+
+.loginForm a {
+    text-decoration: none;
+    color: #E6E6E6;
+    font-size: 10px;
+   
+}
+
+.loginForm a:hover{
+    color: #EBA224;
+}
+
+.loginForm input[type="submit"]{
+  background-color: #EBA224;
+  text-align: center;
+  width: 90%;
+  border: none;
+  height: 40px;
+  
+}
+
+.loginForm span{
+  cursor:pointer;
+}
+
+.msg{
+  margin-left: 18px;
+  color:red;
+}
+

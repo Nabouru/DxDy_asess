@@ -1,0 +1,64 @@
+.split {
+    height: 100%;
+    width:100%;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    background-image:  linear-gradient(to right, black , #131313)
+  
+   
+  }
+  
+  
+
+  .centered {
+    position:fixed;
+    width: 30%;
+    height: 55%;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    background-color: #2C2C2C;
+    text-align: left;
+    align-items: center;
+    border-radius: 10px;
+    
+  }
+
+
+
+.addForm input[type="submit"]{
+      background-color: #EBA224;
+      text-align: center;
+      justify-content: center;
+      width: 90%;
+      border: none;
+      height: 40px;
+      margin-top: 10%;
+}
+
+.addForm  {
+     margin-left:20px;
+}
+
+.addForm input{
+  width:90%;
+  display: flex;
+  outline: none;
+  background-color: transparent;
+  border-width: 0 0 2px ;
+  border-color:#505050;
+}
+
+input::placeholder{
+  color:#FFFF;
+  font-size: 14px;
+  text-align: left;
+  opacity: 20%;
+}    
+
+.addForm label{
+  color:#A4A4A4;
+  font-size: small;
+}
+

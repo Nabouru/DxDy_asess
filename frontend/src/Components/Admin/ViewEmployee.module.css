@@ -1,0 +1,26 @@
+.split {
+    height: 100%;
+    width:100%;
+    
+    top: 0;
+    overflow-x: hidden;
+    background-image:  linear-gradient(to right,  black, #1B1B1B)
+  
+   
+  }
+  .centered {
+    position: absolute;
+    top:50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    width: 60%;
+    
+  }
+
+ 
+
+  h1{
+      color:#EBA224;
+      font-size: 50px;
+  }
